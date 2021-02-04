@@ -1,3 +1,5 @@
+<% content_for(:html_title){ @movies.title } %>
+
 <h2 class="title is-2"><%= @movies.title %></h2>
 
 <p>
@@ -19,5 +21,5 @@
 
 <p>
 <strong>Production Company:</strong>
-  <%= link_to @movies.production_company.name, @movies.production_company.name%>
+  <%= link_to @movies.production_company.name, @movies.production_company%>
 </p>

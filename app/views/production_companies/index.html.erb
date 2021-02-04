@@ -1,0 +1,7 @@
+<h1>Top Production Company</h1>
+
+<ol>
+  <% @movies.each do |movie| %>
+    <li><%= link_to production_company.name,  production_company.name %> </li>
+  <% end %>
+</ol>

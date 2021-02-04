@@ -1,1 +1,23 @@
 <h2 class="title is-2"><%= @movies.title %></h2>
+
+<p>
+  <strong>Description:</strong>
+  <%= @movies.description %>
+</p>
+
+<progress value="<%= @movies.average_vote %>" max="10"><%= @movies.average_vote %></progress>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @movies.duration %>
+</p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @movies.year %>
+</p>
+
+<p>
+<strong>Production Company:</strong>
+  <%= link_to @movies.production_company.name, @movies.production_company.name%>
+</p>

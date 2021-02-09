@@ -1,8 +1,5 @@
-<h2 class="title is-2">Top Production Company</h2>
+<h2 class="title is-2">Top Production Companies</h2>
 
-<ol>
-  <% @production_companies.each do |company| %>
-    <li><%= link_to company.name,  company %>
-    <em> (<%= pluralize company.movies.count, "Top Movie" %>)</em></li>
-  <% end %>
+<ol class="ml-5">
+  <%= render @production_companies %>
 </ol>

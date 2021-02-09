@@ -19,6 +19,9 @@
           <%= link_to "Top Movies From IMDB", root_path%>
         </h1>
         <%= yield %>
+        <% if controller_name != "home" %>
+          <%= render partial: "common/footer" %>
+        <% end %>
       </div>
     </section>
   </body>

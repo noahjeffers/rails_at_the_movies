@@ -1,7 +1,19 @@
 require "csv"
 
+Page.delete_all
 Movie.delete_all
 ProductionCompany.delete_all
+
+Page.create(
+  title:     "About us",
+  content:   "This is all about the creators.",
+  permalink: "about_us"
+)
+Page.create(
+  title:     "Second Post",
+  content:   "This is the second Page. It was written after the About Us page",
+  permalink: "data_info"
+)
 
 filename = Rails.root.join("db/top_movies.csv")
 
